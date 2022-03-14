@@ -43,7 +43,7 @@ class TestCupiBook(unittest.TestCase):
 
         global test
 
-        amigo_funcion = cb.crear_amigo("Pedro Gómez", 20000424, "TAURO", "M", "pop", "drama", 100, 20, 5, False)
+        amigo_funcion = cb.crear_amigo("Pedro Gómez", 20000424, "M", "pop", "drama", 100, 20, 5, False)
         amigo = {'nombre': 'Pedro Gómez', 'fecha_de_nacimiento': 20000424, 'signo_zodiacal': 'TAURO', 'genero': 'M',
                  'genero_musical_favorito': 'pop', 'genero_literaro_favorito': 'drama', 'numero_de_likes': 100,
                  'numero_de_publicaciones': 20, 'amigos_en_comun': 5, 'bloqueado': False}
