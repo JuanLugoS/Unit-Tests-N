@@ -114,7 +114,7 @@ class TestCupiBook(unittest.TestCase):
         amigo_con_5like = {'nombre': 'Andrés Gómez', 'numero_de_likes': 5}
         amigo_con_6like = {'nombre': 'Pedro Gonzalez', 'numero_de_likes': 6}
 
-        respuesta_mas_likes = "El usuario Pedro Gonzalez es el usuario más famoso con 6 likes."
+        respuesta_mas_likes = amigo_con_6like
 
         mas_likes_en_1 = cb.buscar_amigo_con_mas_likes(amigo_con_6like, amigo_con_1like, amigo_con_4like,
                                                        amigo_con_5like)
@@ -160,8 +160,8 @@ class TestCupiBook(unittest.TestCase):
         amigo_con_5publicaciones = {'nombre': 'Andrés Gómez', 'numero_de_publicaciones': 5}
         amigo_con_6publicaciones = {'nombre': 'Pedro Gonzalez', 'numero_de_publicaciones': 6}
 
-        respuesta_mas_publicaciones = "El usuario Nicolas Torres es el usuario con el menor número de publicaciones."
-
+        respuesta_mas_publicaciones = amigo_con_1publicaciones
+        
         menos_publicaciones_en_1 = cb.buscar_amigo_con_menos_publicaciones(amigo_con_1publicaciones,
                                                                            amigo_con_4publicaciones,
                                                                            amigo_con_5publicaciones,
